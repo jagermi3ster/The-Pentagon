@@ -7,6 +7,8 @@ title: What I learned in Economics this week
 ---
 # What I learned in Economics this week 8/21-8/26
 
+![]({{ site.baseurl }}/images/econ.png "fast.ai's logo")
+
 ## Overview on what I learned
 
 The main thing we talked about this week was how to set up IRA's. We talked about Roth vs Traditional and when to use either or. :
