@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: A notebook on what I learned in econ this week.
 categories: [markdown]
-title: An Example Markdown Post
+title: What I learned in Economics this week
 ---
 # What I learned in Economics this week 8/21-8/26
 
