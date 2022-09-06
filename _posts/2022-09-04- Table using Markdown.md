@@ -1,11 +1,9 @@
 ---
-# "Workout Split"
-- toc: true
-- branch: master
-- badges: true
-- comments: true
-- author: Jagger Klein
-- categories: [fastpages, jupyter]
+toc: true
+comments: true
+layout: post
+title: My Workout Split
+description: How to get big
 ---
 ## My workout Split
 
