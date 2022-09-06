@@ -1,7 +1,6 @@
 ---
 # "Workout Split"
 > "7 day split"
----
 - toc: true
 - branch: master
 - badges: true
