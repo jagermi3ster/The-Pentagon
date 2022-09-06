@@ -1,3 +1,14 @@
+---
+# "Workout Split"
+> "7 day split"
+
+- toc: true
+- branch: master
+- badges: true
+- comments: true
+- author: Jagger Klein
+- categories: [fastpages, jupyter]
+---
 ## My workout Split
 
 
