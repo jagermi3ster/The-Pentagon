@@ -66,4 +66,6 @@ Video game questions
 
     -Making an option on question #3 to choose option 1 first
 
+    - On #2 pressing the button even if you got it incorrect will advance you to #3
+
     
