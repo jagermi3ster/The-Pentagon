@@ -148,6 +148,22 @@
   
 
   
+      ,"page3": {
+          "title": "Link to Javascript",
+          "content": "https://jagermi3ster.github.io/The-Pentagon/2022/09/23/js_info.html .",
+          "url": "https://jagermi3ster.github.io/The-Pentagon/_pages/javascript.html",
+          "relUrl": "/_pages/javascript.html",
+          "date": ""
+      }
+      
+  
+
+  
+  
+
+  
+
+  
   
 
   
@@ -156,18 +172,13 @@
   
 
   
-
-  
   
 
   
   
 
   
-  
-
-  
-      ,"page10": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://jagermi3ster.github.io/The-Pentagon/robots.txt",
