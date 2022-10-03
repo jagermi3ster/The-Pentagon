@@ -8,4 +8,4 @@ description: I took these
 
 
 ![](../images/work.jpeg)
-![]({{ site.baseurl }}/images/Econ.png)
+![]({{ site.baseurl }}/images/work.jpeg)
