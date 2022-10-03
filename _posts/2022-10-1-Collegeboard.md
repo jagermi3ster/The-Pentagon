@@ -7,4 +7,4 @@ description: I took these
 ---
 
 
-![]({{ site.baseurl }}/images/work.jpeg)
+![]({{ site.baseurl }}/![](../images/work.jpeg)
