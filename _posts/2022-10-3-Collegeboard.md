@@ -8,3 +8,7 @@ description: Quiz Scores
 
 
 ![]({{ site.baseurl }}/images/COMP.png)
+
+
+![]({{ site.baseurl }}/images/collage pt2.png)
+
