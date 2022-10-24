@@ -18,5 +18,8 @@ Our timer is non-functional right now. I need help from one of our backends to m
 # What I learned
 - I learned a lot about how the layout of the html page. I seems you build the pages top to bottom, or at least how I did it. 
 
+# Problem Solving
+- I was having a tuff time seeing what the html was going to look right or if I was even doing it right, so I was searching up programs to see if I could code and see it build at the same time. This is where I found liveweave which helped me build in html in real time.
+
 **CSS Learning**
 - I learned that different colors in CSS can be in a HEX form, RGB form or a HSL form. I then colored the different buttons and text. It was pretty straightforward with CSS, you call the ID and then can add different styles to each id. The way I spaced out everything was mostly with margins but I was having trouble with the title and bar below it.
