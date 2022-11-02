@@ -26,4 +26,4 @@ Our timer is non-functional right now. I need help from one of our backends to m
 
 ## Week 3 Problems
 
-- Our server went down on Tuesday, we got it fixed Wenesday. We also can not figure out how to play an alarm sound with a button using Javascript.
+- Our server went down on Tuesday, we got it fixed Wenesday. We also can not figure out how to play an alarm sound with a button using Javascript. It seems the audio files on google need the user to allow the sound to play, which means pressing the button. But we need our alarm to sound automatically after time has passed.
