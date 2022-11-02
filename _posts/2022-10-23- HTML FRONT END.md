@@ -23,3 +23,7 @@ Our timer is non-functional right now. I need help from one of our backends to m
 
 **CSS Learning**
 - I learned that different colors in CSS can be in a HEX form, RGB form or a HSL form. I then colored the different buttons and text. It was pretty straightforward with CSS, you call the ID and then can add different styles to each id. The way I spaced out everything was mostly with margins but I was having trouble with the title and bar below it.
+
+## Week 3 Problems
+
+- Our server went down on Tuesday, we got it fixed Wenesday. We also can not figure out how to play an alarm sound with a button using Javascript.
