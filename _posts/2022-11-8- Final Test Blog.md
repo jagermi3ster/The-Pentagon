@@ -27,3 +27,7 @@ I learned some functions during the test and learned wht is necessary and what i
 - Think some of the functions taught me the way code goes back and forth through the lines of code. 
 
 - I think this test also taught me that organization in computer science is very important. I can get confusing when the lines get overcomplicated when it the code could be condensed.  
+
+# Trimester Reflection
+
+- What did I learn in this class? I think I actually did learn some things in this class unlike a lot of other classes in Del Norte. I think I learned some basics of python and some cool things in HTML/CSS. I learned what Github and VSCODE were, I also learned how some functions work. What I'm looking forward next tri is binary code, when I think of like a hacker I think of a lot of binary numbers on a screen. It also feels a little bit math related which I'm good at, so I think I could be decent on it. 
