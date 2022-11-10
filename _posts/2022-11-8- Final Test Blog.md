@@ -25,3 +25,5 @@ I would say the easier parts of the test were the loops and functions. It's what
 I learned some functions during the test and learned wht is necessary and what isn't necessary. I learned a little bit about binary and how 0 in four bit is actually 0000 and 1 is 0001, then the ones keep shifting over in a way.
 
 - Think some of the functions taught me the way code goes back and forth through the lines of code. 
+
+- I think this test also taught me that organization in computer science is very important. I can get confusing when the lines get overcomplicated when it the code could be condensed.  
