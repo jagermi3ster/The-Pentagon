@@ -38,9 +38,12 @@ baseurl: "/The-Pentagon" # the subpath of your site, e.g. "/blog".
 
 # Github and twitter are optional:
 minima:
+  skin: dark
+  #  social_links:
+  #    twitter: jagermiester
+  #    github: jagermi3ster
   social_links:
-    twitter: fastdotai
-    github: jagermi3ster
+    - { platform: github, user_url: ”
 
 # Set this to true to get LaTeX math equation support
 use_math: 
