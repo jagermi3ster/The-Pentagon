@@ -42,8 +42,17 @@ minima:
   #  social_links:
   #    twitter: jagermiester
   #    github: jagermi3ster
-  social_links:
+  #   youtube_channel: UClIKOsDS5dsfzFA3zveDT3Q
+    social_links:
     - { platform: github, user_url: ”
+https://github.com/jagermi3ster
+“}
+    - { platform: twitter, user_url: ”
+https://twitter.com/jagermiester
+“}
+    - { platform: youtube, user_url: ”
+https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q
+“}
 
 # Set this to true to get LaTeX math equation support
 use_math: 
