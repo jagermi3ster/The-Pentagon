@@ -43,7 +43,7 @@ minima:
   #    twitter: jagermiester
   #    github: jagermi3ster
   #   youtube_channel: UClIKOsDS5dsfzFA3zveDT3Q
-    social_links:
+  social_links:
     - { platform: github, user_url: ”
 https://github.com/jagermi3ster
 “}
