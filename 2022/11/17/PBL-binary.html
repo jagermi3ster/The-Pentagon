@@ -4,9 +4,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Binary | Jagger’s Website</title>
+<title>Binary Calculator | Jagger’s Website</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Binary" />
+<meta property="og:title" content="Binary Calculator" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="A Binary Math illustrative application using HTML, Liquid, and JavaScript." />
 <meta property="og:description" content="A Binary Math illustrative application using HTML, Liquid, and JavaScript." />
@@ -16,9 +16,9 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-11-17T00:00:00-06:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Binary" />
+<meta property="twitter:title" content="Binary Calculator" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-11-17T00:00:00-06:00","datePublished":"2022-11-17T00:00:00-06:00","description":"A Binary Math illustrative application using HTML, Liquid, and JavaScript.","headline":"Binary","mainEntityOfPage":{"@type":"WebPage","@id":"https://jagermi3ster.github.io/The-Pentagon/2022/11/17/PBL-binary.html"},"url":"https://jagermi3ster.github.io/The-Pentagon/2022/11/17/PBL-binary.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-11-17T00:00:00-06:00","datePublished":"2022-11-17T00:00:00-06:00","description":"A Binary Math illustrative application using HTML, Liquid, and JavaScript.","headline":"Binary Calculator","mainEntityOfPage":{"@type":"WebPage","@id":"https://jagermi3ster.github.io/The-Pentagon/2022/11/17/PBL-binary.html"},"url":"https://jagermi3ster.github.io/The-Pentagon/2022/11/17/PBL-binary.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/The-Pentagon/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://jagermi3ster.github.io/The-Pentagon/feed.xml" title="Jagger's Website" /><link rel="shortcut icon" type="image/x-icon" href="/The-Pentagon/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -118,6 +118,26 @@ window.onload = wrap_img;
                     <button type="button" id="butt2" onclick="javascript:toggleBit(2)">Turn on</button>
                 </td>
                 
+                <td><img class="img-responsive py-3" id="bulb3" src="/The-Pentagon/images/bulb_off.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt3" onclick="javascript:toggleBit(3)">Turn on</button>
+                </td>
+                
+                <td><img class="img-responsive py-3" id="bulb4" src="/The-Pentagon/images/bulb_off.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt4" onclick="javascript:toggleBit(4)">Turn on</button>
+                </td>
+                
+                <td><img class="img-responsive py-3" id="bulb5" src="/The-Pentagon/images/bulb_off.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt5" onclick="javascript:toggleBit(5)">Turn on</button>
+                </td>
+                
+                <td><img class="img-responsive py-3" id="bulb6" src="/The-Pentagon/images/bulb_off.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt6" onclick="javascript:toggleBit(6)">Turn on</button>
+                </td>
+                
+                <td><img class="img-responsive py-3" id="bulb7" src="/The-Pentagon/images/bulb_off.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt7" onclick="javascript:toggleBit(7)">Turn on</button>
+                </td>
+                
             </tr>
             <tr>
                 
@@ -128,6 +148,16 @@ window.onload = wrap_img;
                 
                 <td><input type="text" id="digit2" value="0" size="1" readonly="" /></td>
                 
+                <td><input type="text" id="digit3" value="0" size="1" readonly="" /></td>
+                
+                <td><input type="text" id="digit4" value="0" size="1" readonly="" /></td>
+                
+                <td><input type="text" id="digit5" value="0" size="1" readonly="" /></td>
+                
+                <td><input type="text" id="digit6" value="0" size="1" readonly="" /></td>
+                
+                <td><input type="text" id="digit7" value="0" size="1" readonly="" /></td>
+                
             </tr>
             </table>
         </div>
@@ -135,7 +165,7 @@ window.onload = wrap_img;
 </div>
 
 <script>
-    const BITS = 3;
+    const BITS = 8;
     const MAX = 2 ** BITS - 1;
     const MSG_ON = "Turn on";
     const IMAGE_ON = "/The-Pentagon/images/bulb_on.gif";
