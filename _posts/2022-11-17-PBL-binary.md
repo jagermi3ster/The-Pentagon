@@ -15,7 +15,7 @@ type: pbl
 <!-- Hack 3: do your own thing -->
 
 
-{% assign BITS = 3 %}
+{% assign BITS = 6 %}
 
 <div class="container bg-primary">
     <header class="pb-3 mb-4 border-bottom border-primary text-dark">
