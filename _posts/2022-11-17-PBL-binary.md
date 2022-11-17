@@ -1,5 +1,5 @@
 ---
-title: Binary 
+title: Binary Calculator
 layout: default
 description: A Binary Math illustrative application using HTML, Liquid, and JavaScript.
 ---
@@ -9,7 +9,7 @@ description: A Binary Math illustrative application using HTML, Liquid, and Java
 <!-- Hack 3: do your own thing -->
 
 
-{% assign BITS = 3 %}
+{% assign BITS = 8 %}
 
 <div class="container bg-primary">
     <header class="pb-3 mb-4 border-bottom border-primary text-dark">
