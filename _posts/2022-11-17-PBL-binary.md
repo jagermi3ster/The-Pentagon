@@ -1,5 +1,5 @@
 ---
-title: Binary Calculator
+title: Binary Calculator local change
 layout: default
 description: A Binary Math illustrative application using HTML, Liquid, and JavaScript.
 ---
