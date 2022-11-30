@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "Title",
+            "title": "3.3 and 3.4 Hacks",
             "content": "Noun = &quot;Mr.Mortenson&quot; Adjective = &quot;handsome&quot; Adjective2 = &quot;Very&quot; Verb = &quot;is&quot; abrev = Noun[0:6] yoda = Adjective2 + &quot; &quot; + Adjective + &quot; &quot; + abrev + &quot; &quot; + Verb + &quot;.&quot; print(yoda) . Very handsome Mr.Mor is. . cookie = len(&quot;choclate&quot;) cookie2 = len(&quot;rasin&quot;) len1 = cookie / 2 len2 = cookie2 * 45 vote1 = str(cookie) + &quot; vote &quot; + str(len2) vote2 = str(cookie2) + &quot; vote &quot; + str(len1) votes = vote1 + &quot; &quot; + vote2 print(votes) . 8 vote 225 5 vote 4.0 .",
-            "url": "https://jagermi3ster.github.io/The-Pentagon/2022/11/30/3.3-and-3.4-Hacks.html",
-            "relUrl": "/2022/11/30/3.3-and-3.4-Hacks.html",
+            "url": "https://jagermi3ster.github.io/The-Pentagon/fastpages/jupyter/2022/11/30/3.3-and-3.4-Hacks.html",
+            "relUrl": "/fastpages/jupyter/2022/11/30/3.3-and-3.4-Hacks.html",
             "date": " • Nov 30, 2022"
         }
         
