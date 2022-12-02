@@ -104,3 +104,10 @@ Here are some hacks:
 -concat() returns a string made up of the concatenated strings ex. concat("string1", "string2") would return string1string2
 
 substring() returns the characters from the string beginning at the at the first position to the last so an example of this would be substring ("abcdefghijk", 2, 5) would print bcde (pseudocode starts at 1)
+
+**Day 3**
+
+# Boolean and Binary
+
+- Both have two ciphers 1 and 0
+Boolean or true or false only
