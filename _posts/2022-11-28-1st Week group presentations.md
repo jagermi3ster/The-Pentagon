@@ -2,7 +2,7 @@
 toc: true
 comments: true
 layout: post
-title: 1st Week Group Presentations
+title: Group Presentations Notes
 description: Listening to lessons provided by other groups.
 ---
 
@@ -61,7 +61,7 @@ Element = individual value in a list that is assigned to a unique index
 
 - Convert Data into a different form that you want easier
 
-**DAY 2**
+
 
 # Mathmatical Expressions and Strings
 
@@ -105,7 +105,7 @@ Here are some hacks:
 
 substring() returns the characters from the string beginning at the at the first position to the last so an example of this would be substring ("abcdefghijk", 2, 5) would print bcde (pseudocode starts at 1)
 
-**Day 3**
+
 
 # Boolean and Binary
 
@@ -127,3 +127,20 @@ Python If, Elif, Else conditionals; Nested Selection Statements
 Python For, While loops with Range, with List
 Combining loops with conditionals to Break, Continue
 Procedural Abstraction, Python Def procedures, Parameters, Return Values (edited) 
+
+# Iteration Notes
+
+- You can use iteration in notes to print out specifc items in a list
+-Tuple: collection that is ordered, unchangeable, allows duplicates
+- Set: collection that is unordered, unchangeable, doesn't allow duplicates
+- Dictionary: collection that is ordered, changeable, doesn't allow duplicates
+
+Terms: 
+
+- Index: a term used to sort data in order to reference to an element in a list (allows for duplicates)
+- Elements: the values in the list assigned to an index
+- Definite iteration clarifies how many times the loop is going to run, while indefinite specifies a condition that must be met
+
+- Else: when the condition does not meet, do statement()
+- Elif: when the condition does not meet, but meets another condition, do statement()
+- Break: stop the loop
