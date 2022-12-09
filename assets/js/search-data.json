@@ -35,10 +35,10 @@
   
     
         ,"post3": {
-            "title": "Title",
-            "content": "import random def rollDice(n): rollsList = [] while n &gt; 0: rollsList.append(random.randint(1,20)) n -= 1 print(rollsList) return max(rollsList) rollDice(3) . [18, 5, 15] . 18 .",
-            "url": "https://jagermi3ster.github.io/The-Pentagon/2022/12/08/3.9-and-3.11-HW.html",
-            "relUrl": "/2022/12/08/3.9-and-3.11-HW.html",
+            "title": "3.9 and 3.11 Homework",
+            "content": "import random def rollDice(n): rollsList = [] while n &gt; 0: rollsList.append(random.randint(1,20)) n -= 1 print(rollsList) return max(rollsList) rollDice(3) . [18, 5, 15] . 18 . Link to flowchart .",
+            "url": "https://jagermi3ster.github.io/The-Pentagon/fastpages/jupyter/2022/12/08/3.9-and-3.11-HW.html",
+            "relUrl": "/fastpages/jupyter/2022/12/08/3.9-and-3.11-HW.html",
             "date": " • Dec 8, 2022"
         }
         
