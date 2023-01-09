@@ -1,6 +1,12 @@
 ---
 keywords: fastai
-title: Title
+title: "Collegeboard Testing"
+toc: true
+branch: master
+badges: true
+comments: true
+author: Jagger Klein
+categories: [fastpages, jupyter]
 nb_path: _notebooks/2023-1-9-Collegeboard Grades.ipynb
 layout: notebook
 ---
@@ -14,6 +20,61 @@ layout: notebook
 
 <div class="container" id="notebook-container">
         
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<table>
+<thead><tr>
+<th>Sample</th>
+<th>Purpose</th>
+<th>Data Abstraction</th>
+<th>Managing Complexity</th>
+<th>Procedural Abstraction</th>
+<th>Algorithm Implementation</th>
+<th>Testing</th>
+<th>Total Grade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1/1</td>
+<td>0/1</td>
+<td>1/1</td>
+<td>0/1</td>
+<td>1/1</td>
+<td>0/1</td>
+<td>4/6</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1/1</td>
+<td>1/1</td>
+<td>1/1</td>
+<td>1/1</td>
+<td>1/1</td>
+<td>1/1</td>
+<td>6/6</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Sample 1 Explanation: The student didn't complete the program fully, it was pretty short, and was only tested once. Didn't manage complexity at all. However they did test it and explained the algorithm in detail. And abstraction for both Procedural and Data abstraction, they went into a lot of detail about their code and what each of its functions were.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Sample 2 Explanation: This student went very in-depth and explained everything in detail. It was tested and they managed their complexity, everything was done up to standards.</p>
+
+</div>
+</div>
+</div>
 </div>
  
 
