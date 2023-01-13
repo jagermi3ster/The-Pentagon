@@ -131,21 +131,48 @@ layout: notebook
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Student Three's Scoring</strong>: 6/6, 5/6<em>
-|    </em>Reporting Category<em>    | </em>Requirements<em> | </em>Student Score<em> | </em>College Board Score* |
-|:----------------------------:|------------------|:-----------------:|:-----------------------:|
-| Program Purpose and Function |  ☒ Describes the overall purpose of the program demonstrated in the video.<br>☒ Describes what functionality of the program is demonstrated in the video.<br>☒ Describes the input and output of the program.     |          1/1         |            1/1           |
-|       Data Abstraction       |  ☒ One program code that shows how data has been stored in this list (or another collection type).<br> ☒ One program code that shows the data in this same list being used as part of fulfilling the program’s purpose.<br> ☒ Identifies the name of the variable representing the list being used in this response.<br> ☒ Describes what the data contained in this list is representing in the program.             |     5/6              |            1/1           |
-|      Managing Complexity     |  ☒ Includes a program code segment that shows a list being used to manage complexity in the program.<br> ☒ Explains how the named, selected list manages complexity in the program code by explaining why the program code could not be written, or how it would be written differently, without using this list.                |       1/1            |            1/1           |
-|    Procedural Abstraction    |  ☒ One program code showing a student-developed procedure with at least one parameter that has an effect on the functionality of the procedure.<br> ☒ One program code showing where the student-developed procedure is being called.<br> ☒ Describes what the identified procedure does and how it contributes to the overall functionality of the program.                |        1/1           |            1/1           |
-|   Algorithm Implementation   |  ☒ Includes a program code segment of a student-developed algorithm that includes sequencing, selection, and iteration.<br> ☒ Explains in detailed steps how the identified algorithm works in enough detail that someone else could recreate it.                |        1/1           |            1/1           |
-|            Testing           |  ☒ Describes two calls to the selected procedure identified in written response 3c. Each call must pass a different argument(s) that causes a different segment of code in the algorithm to execute.<br> ☒ Describes the condition(s) being tested by each call to the procedure.<br> ☒ Identifies the result of each call.              |           1/1        |            1/1           |</p>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Reporting</span> <span class="n">Category</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Requirements</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Student</span> <span class="n">Score</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">College</span> <span class="n">Board</span> <span class="n">Score</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
+  <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">Program</span> <span class="n">Purpose</span> <span class="ow">and</span> <span class="n">Function</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">ul</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="err">☒</span> <span class="n">Describes</span> <span class="n">the</span> <span class="n">overall</span> <span class="n">purpose</span> <span class="n">of</span> <span class="n">the</span> <span class="n">program</span> <span class="n">demonstrated</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">video</span><span class="o">.&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="err">☒</span> <span class="n">Describes</span> <span class="n">what</span> <span class="n">functionality</span> <span class="n">of</span> <span class="n">the</span> <span class="n">program</span> <span class="ow">is</span> <span class="n">demonstrated</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">video</span><span class="o">.&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="err">☒</span> <span class="n">Describes</span> <span class="n">the</span> <span class="nb">input</span> <span class="ow">and</span> <span class="n">output</span> <span class="n">of</span> <span class="n">the</span> <span class="n">program</span><span class="o">.&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+      <span class="o">&lt;/</span><span class="n">ul</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="mi">1</span><span class="o">/</span><span class="mi">1</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="mi">1</span><span class="o">/</span><span class="mi">1</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+  <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">Data</span> <span class="n">Abstraction</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">ul</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="err">☒</span> <span class="n">One</span> <span class="n">program</span> <span class="n">code</span> <span class="n">that</span> <span class="n">shows</span> <span class="n">how</span> <span class="n">data</span> <span class="n">has</span> <span class="n">been</span> <span class="n">stored</span> <span class="ow">in</span> <span class="n">this</span> <span class="nb">list</span> <span class="p">(</span><span class="ow">or</span> <span class="n">another</span> <span class="n">collection</span> <span class="nb">type</span><span class="p">)</span><span class="o">.&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="err">☒</span> <span class="n">One</span> <span class="n">program</span> <span class="n">code</span> <span class="n">that</span> <span class="n">shows</span> <span class="n">the</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">this</span> <span class="n">same</span> <span class="nb">list</span> <span class="n">being</span> <span class="n">used</span> <span class="k">as</span> <span class="n">part</span> <span class="n">of</span> <span class="n">fulfilling</span> <span class="n">the</span> <span class="n">program</span><span class="err">’</span><span class="n">s</span> <span class="n">purpose</span><span class="o">.&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="err">☒</span> <span class="n">Identifies</span> <span class="n">the</span> <span class="n">name</span> <span class="n">of</span> <span class="n">the</span> <span class="n">variable</span> <span class="n">representing</span> <span class="n">the</span> <span class="nb">list</span> <span class="n">being</span> <span class="n">used</span> <span class="ow">in</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
 
 </div>
-</div>
-</div>
+    {% endraw %}
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Student Four's Scoring</strong>: 3/6, 4/6<em>
