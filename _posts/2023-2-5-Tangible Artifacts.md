@@ -60,4 +60,4 @@ This week I have been trying to put up our backend server on aws. This week I ha
 
 - I then put our flask server with data into aws. The problem I have gotten into is creating docker in AWS.
 
-![]({{ site.baseurl }}/images/aws.png)
+![]({{site.baseurl}}/images/aws.png)
