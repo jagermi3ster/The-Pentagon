@@ -61,3 +61,10 @@ This week I have been trying to put up our backend server on aws. This week I ha
 - I then put our flask server with data into aws. The problem I have gotten into is creating docker in AWS.
 
 ![]({{site.baseurl}}/images/aws.png)
+
+**Next Week's Plan**
+
+- In the next three days I plan to get the aws server fully up and running. I plan to fix the problem of editing the dockerfile and successfully running all the docker compose commands. I then plan on working on inserting nginx on the ubuntu servers.
+
+- After I finish with the backend aws server I plan on making a successful login in page that stores data in our sql table. I plan to have my other frontend help me with this because I have not ever made a working login page and I will need some help.
+
