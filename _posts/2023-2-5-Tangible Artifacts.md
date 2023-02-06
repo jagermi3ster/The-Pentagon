@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: A minimal example of using markdown with fastpages.
 categories: [markdown]
-title: 5.3 and 5.4 Blog 
+title: Tangible Artifacts
 ---
 
 **Intentional or Purposeful bias (Crossover Group Up, 10 minutes)**
@@ -41,4 +41,23 @@ Kaggle datasets for code and science exploration. The avenue of data points us y
 
 **Summary** 
 
-- I think this shows that media and technology own a big part of our life. They use these small little tactics like making ads personalized and making AI voices feminine. I think these FAANG companies have way more influence than we think and feed us information that is useful for them. I think crowdsourcing can be a using tool in this generation so we can get a lot of quick information in one big bunch like an API.
+**5.3 Hacks**
+- I think there is a ton of computer bias around the world. This was shown through the age ranges of different social media sites. We can see they target the audience that uses there platforms the most to try and raise revenue for there company. I also think technology is biases for people that have a little more money. They are able to afford the better and more useful technology giving them an advantage. I think we can avoid bias by making technology more accessable for everyone. If we allow more access I think we can eliminate media targetting groups. 
+
+**5.4 Hacks**
+Think of a use case for crowdsourcing in you project …
+
+CompSci has 150 ish principles students. Describe a crowdsource idea and how you might initiate it in our environment? 
+- I think a good crowdsourcing idea could be a poll for all CS students to vote on assignments they want to learn. This way the majority could get the assignments they want to do, the only problem with this is the collegeboard standerds.
+What about Del Norte crowdsourcing? Could your project be better with crowdsourcing?
+What kind of data could you capture at N@tM to make evening interesting? Perhaps use this data to impress Teachers during finals week.
+
+_ I think we could crowdsource at the N@TM by collecting the things of what people do. If similar ideas or code are a common thing in people projects I think these people would like to focus on that.
+
+**Individual Contribution**
+
+This week I have been trying to put up our backend server on aws. This week I have been following the steps in nighthawk coders trying to put up a server on aws. I connected to the instance and that part all running. 
+
+- I then put our flask server with data into aws. The problem I have gotten into is creating docker in AWS.
+
+![]({{ site.baseurl }}/images/aws.png)
