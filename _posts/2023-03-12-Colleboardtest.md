@@ -3,10 +3,11 @@ toc: true
 layout: post
 description: A minimal example of using markdown with fastpages.
 categories: [markdown]
-title: 5.5 and 5.6 Blog with Reflection
+title: Collegeboard Tri 2 Final
 ---
 
 **SCORE**
+
 ![Alt text](../images/2650.png)
 
 I got a 41/50 on the final tri 2 test on collegeboard. I think this is pretty decent for myself but I got help from my friends and had to search up multiple problems from the internet. 
@@ -20,6 +21,6 @@ This question is trying to teach you that a lot of information on the internet c
 
 This question is trying to show how different inputs can show different lists. I got this one wrong because I thought it went in list one and not the result list.
 
-[label](2023-03-12-Colleboardtest.md)
+
 
 This question is trying to show how different inputs can show different lists. I got this one wrong because I thought it went in list one and not the result list.
