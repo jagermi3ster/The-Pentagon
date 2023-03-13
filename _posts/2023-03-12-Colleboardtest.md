@@ -23,4 +23,6 @@ This question is trying to show how different inputs can show different lists. I
 
 
 
-This question is trying to show how different inputs can show different lists. I got this one wrong because I thought it went in list one and not the result list.
+Review:
+
+
