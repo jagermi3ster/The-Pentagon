@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      8 min read
     
 </span></p>
 
@@ -242,14 +242,13 @@ window.onload = wrap_img;
 </blockquote>
 <ul>
 <li>Comment on these items in the class, purpose and defintion.<ul>
-<li>class User</li>
-<li>db.Model inheritance</li>
+<li>class User:<strong>Class is a templete definition for the property user</strong>    - db.Model inheritance</li>
 <li>
 <em>init</em> method</li>
 <li>
-<code>@property</code>, <code>@&lt;column&gt;.setter</code>
+<code>@property</code>, <code>@&lt;column&gt;.setter</code> <strong>Setter changes the value that was initialized</strong>
 </li>
-<li>create, read, update, delete methods</li>
+<li>create, read, update, delete methods: <strong>Common methods for databasing. Methods to help us interact with data and interact with CRUD.</strong> </li>
 </ul>
 </li>
 </ul>
@@ -282,7 +281,7 @@ window.onload = wrap_img;
 <span class="c1"># -- c.) SQLAlchemy ORM is layer on top of SQLAlchemy Core, then SQLAlchemy engine, SQL</span>
 <span class="k">class</span> <span class="nc">User</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
     <span class="n">__tablename__</span> <span class="o">=</span> <span class="s1">'users'</span>  <span class="c1"># table name is plural, class name is singular</span>
-
+    <span class="c1"># --</span>
     <span class="c1"># Define the User schema with "vars" from object</span>
     <span class="nb">id</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
     <span class="n">_name</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -478,6 +477,25 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Records exist uid toby, or error.
+Records exist uid niko, or error.
+Records exist uid lex, or error.
+Records exist uid whit, or error.
+Records exist uid indi, or error.
+Records exist uid raven, or error.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -497,6 +515,14 @@ window.onload = wrap_img;
 </ol>
 </li>
 </ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>ORM(Oject Relational Model)- in SQLALCHEMY ORM</p>
 
 </div>
 </div>
@@ -551,6 +577,14 @@ window.onload = wrap_img;
 </ol>
 </li>
 </ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>adding a username and password</p>
 
 </div>
 </div>
