@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      8 min read
+      10 min read
     
 </span></p>
 
@@ -183,8 +183,8 @@ window.onload = wrap_img;
 </blockquote>
 <ul>
 <li>Comment on where you have observed these working?  Provide a defintion of purpose.<ol>
-<li>Flask app object</li>
-<li>SQLAlchemy db object</li>
+<li>Flask app object. I observe flask app object on anything that runs locally such as my local site or locally running my project from last trimester. </li>
+<li>SQLAlchemy db object. I observe SQLAlchemy for any database table that holds table such as fitness data from my project last trimester.</li>
 </ol>
 </li>
 </ul>
@@ -213,7 +213,7 @@ window.onload = wrap_img;
 <span class="c1"># Setup of key Flask object (app)</span>
 <span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
 <span class="c1"># Setup SQLAlchemy object and properties for the database (db)</span>
-<span class="n">database</span> <span class="o">=</span> <span class="s1">'sqlite:///files/sqlite.db'</span>  <span class="c1"># path and filename of database</span>
+<span class="n">database</span> <span class="o">=</span> <span class="s1">'sqlite:///sqlite.db'</span>  <span class="c1"># path and filename of database</span>
 <span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s1">'SQLALCHEMY_TRACK_MODIFICATIONS'</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
 <span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s1">'SQLALCHEMY_DATABASE_URI'</span><span class="p">]</span> <span class="o">=</span> <span class="n">database</span>
 <span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s1">'SECRET_KEY'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'SECRET_KEY'</span>
@@ -242,9 +242,11 @@ window.onload = wrap_img;
 </blockquote>
 <ul>
 <li>Comment on these items in the class, purpose and defintion.<ul>
-<li>class User:<strong>Class is a templete definition for the property user</strong>    - db.Model inheritance</li>
+<li>class User:<strong>Class is a templete definition for the property user</strong>    - db.Model inheritance<strong>This defines the database and what is inside of it</strong>
+</li>
 <li>
-<em>init</em> method</li>
+<em>init</em> method: <strong>Helps initialize attributes of the objects created.</strong>
+</li>
 <li>
 <code>@property</code>, <code>@&lt;column&gt;.setter</code> <strong>Setter changes the value that was initialized</strong>
 </li>
@@ -424,9 +426,8 @@ window.onload = wrap_img;
 </blockquote>
 <ul>
 <li>Comment on how these work?<ol>
-<li>Create All Tables from db Object</li>
-<li>User Object Constructors</li>
-<li>Try / Except </li>
+<li>Create All Tables from db Object. Uses a ORM tool in order to create the tables. </li>
+<li>User Object Constructors:Creates different ways to create a user class with different attributes    3. Try / Except: Creates exceptions for errors so the site doesn't crash.</li>
 </ol>
 </li>
 </ul>
@@ -483,12 +484,12 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Records exist uid toby, or error.
-Records exist uid niko, or error.
-Records exist uid lex, or error.
-Records exist uid whit, or error.
-Records exist uid indi, or error.
-Records exist uid raven, or error.
+<pre>Created new uid toby
+Created new uid niko
+Created new uid lex
+Created new uid whit
+Created new uid indi
+Created new uid raven
 </pre>
 </div>
 </div>
@@ -570,10 +571,18 @@ Records exist uid raven, or error.
 </blockquote>
 <ul>
 <li>Comment on purpose of following<ol>
-<li>user.find_by_uid() and try/except</li>
-<li>user = User(...)</li>
-<li>user.dob and try/except</li>
-<li>user.create() and try/except</li>
+<li>user.find_by_uid() and try/except
+<strong>The purpose of user.find_by_uid() is to find a user by their unique identifier (uid). The try/except block is used to handle the case where the user with the given uid does not exist in the system.</strong>
+</li>
+<li>user = User(...)
+<strong>The purpose of this statement is to create a new user object and assign it to the variable user. The ellipsis (...) represents the arguments that are passed to the constructor of the User class.</strong>
+</li>
+<li>user.dob and try/except
+<strong>The purpose of user.dob is to access the date of birth property of the user object. The try/except block is used to handle the case where the date of birth is not available or cannot be retrieved for some reason.</strong>
+</li>
+<li>user.create() and try/except
+<strong>The purpose of user.create() is to create a new user in the system. The try/except block is used to handle errors that might occur during the creation process, such as problems connecting to the database or missing/invalid required fields</strong>
+</li>
 </ol>
 </li>
 </ul>
@@ -639,6 +648,21 @@ Records exist uid raven, or error.
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Created
+ {'id': 7, 'name': 'Jagger', 'uid': 'jaggerk', 'dob': '09-18-4000', 'age': -1978}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -653,8 +677,12 @@ Records exist uid raven, or error.
 </blockquote>
 <ul>
 <li>Comment on purpose of following<ol>
-<li>User.query.all</li>
-<li>json_ready assignment, google List Comprehension</li>
+<li>User.query.all
+<strong>The purpose of User.query.all is to query the database for all instances of the User model and return them as a list.</strong>
+</li>
+<li>json_ready assignment, google List Comprehension
+<strong>The purpose of this code is to convert a list of User objects into a list of dictionaries that are ready to be serialized into JSON format. This is achieved using a list comprehension, which is a concise way to create a new list by applying a transformation to each element of an existing list. In this case, the transformation is to call the to_dict method on each User object to convert it to a dictionary representation. The resulting list of dictionaries can then be serialized into JSON format using a JSON library.</strong>
+</li>
 </ol>
 </li>
 </ul>
