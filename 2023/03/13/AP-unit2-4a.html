@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      10 min read
+      13 min read
     
 </span></p>
 
@@ -427,7 +427,17 @@ window.onload = wrap_img;
 <ul>
 <li>Comment on how these work?<ol>
 <li>Create All Tables from db Object. Uses a ORM tool in order to create the tables. </li>
-<li>User Object Constructors:Creates different ways to create a user class with different attributes    3. Try / Except: Creates exceptions for errors so the site doesn't crash.</li>
+</ol>
+<ul>
+<li>
+<strong>Create All Tables from db Object:Automates the creation of database tables using an ORM tool.</strong>    2. User Object Constructors: Creates different ways to create a user class with different attributes.
+<strong>User Object Constructors: Enables creating objects of the User class with different attributes using different constructors.</strong>
+</li>
+</ul>
+<ol>
+<li>Try / Except: Creates exceptions for errors so the site doesn't crash.
+<strong>Try / Except: Prevents the site from crashing by handling errors and exceptions in code execution.</strong>
+</li>
 </ol>
 </li>
 </ul>
@@ -511,8 +521,10 @@ Created new uid raven
 </blockquote>
 <ul>
 <li>Comment on purpose of following<ol>
-<li>User.query.filter_by</li>
-<li>user.password</li>
+<li>User.query.filter_by
+<strong>User.query.filter_by:Used to query the database to find rows in the User table that match certain conditions specified in the filter_by function. This is a common way of retrieving data from a database using an ORM.</strong>    2. user.password
+<strong>user.password: Refers to the password property of the user object, which is typically used for authentication and security purposes. This property stores the password for the user, often in an encrypted or hashed format to protect it from unauthorized access.</strong>
+</li>
 </ol>
 </li>
 </ul>
@@ -648,21 +660,6 @@ Created new uid raven
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Created
- {'id': 7, 'name': 'Jagger', 'uid': 'jaggerk', 'dob': '09-18-4000', 'age': -1978}
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -733,6 +730,142 @@ Created new uid raven
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">datetime</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<span class="kn">import</span> <span class="nn">json</span>
+
+<span class="kn">from</span> <span class="nn">sqlalchemy.exc</span> <span class="kn">import</span> <span class="n">IntegrityError</span>
+<span class="kn">from</span> <span class="nn">werkzeug.security</span> <span class="kn">import</span> <span class="n">generate_password_hash</span><span class="p">,</span> <span class="n">check_password_hash</span>
+
+
+<span class="sd">''' Tutorial: https://www.sqlalchemy.org/library.html#tutorials, try to get into a Python shell and follow along '''</span>
+
+<span class="c1"># Define the Hero class to manage actions in the 'heroes' table</span>
+<span class="c1"># -- Object Relational Mapping (ORM) is the key concept of SQLAlchemy</span>
+<span class="c1"># -- a.) db.Model is like an inner layer of the onion in ORM</span>
+<span class="c1"># -- b.) Hero represents data we want to store, something that is built on db.Model</span>
+<span class="c1"># -- c.) SQLAlchemy ORM is layer on top of SQLAlchemy Core, then SQLAlchemy engine, SQL</span>
+<span class="k">class</span> <span class="nc">Hero</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">__tablename__</span> <span class="o">=</span> <span class="s1">'heroes'</span>  <span class="c1"># table name is plural, class name is singular</span>
+    <span class="c1"># --</span>
+    <span class="c1"># Define the Hero schema with "vars" from object</span>
+    <span class="nb">id</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">_name</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">_real_name</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">_role</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">_health</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Integer</span><span class="p">)</span>
+    <span class="n">_abilities</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">_ultimate</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="c1"># constructor of a Hero object, initializes the instance variables within object (self)</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">role</span><span class="p">,</span> <span class="n">real_name</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">health</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">abilities</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ultimate</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>    <span class="c1"># variables with self prefix become part of the object, </span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_real_name</span> <span class="o">=</span> <span class="n">real_name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_role</span> <span class="o">=</span> <span class="n">role</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_health</span> <span class="o">=</span> <span class="n">health</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_abilities</span> <span class="o">=</span> <span class="n">abilities</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ultimate</span> <span class="o">=</span> <span class="n">ultimate</span>
+
+    <span class="c1"># a name getter method, extracts name from object</span>
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_name</span>
+    
+    <span class="c1"># a setter function, allows name to be updated after initial object creation</span>
+    <span class="nd">@name</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>
+    
+    <span class="c1"># a getter method, extracts real name from object</span>
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">real_name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_real_name</span>
+    
+    <span class="c1"># a setter function, allows real name to be updated after initial object creation</span>
+    <span class="nd">@real_name</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">real_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">real_name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_real_name</span> <span class="o">=</span> <span class="n">real_name</span>
+        
+    <span class="c1"># a getter method, extracts role from object</span>
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">role</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_role</span>
+    
+    <span class="c1"># a setter function, allows role to be updated after initial object creation</span>
+    <span class="nd">@role</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">role</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">role</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_role</span> <span class="o">=</span> <span class="n">role</span>
+        
+    <span class="c1"># a getter method, extracts health from object</span>
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">health</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_health</span>
+    
+    <span class="c1"># a setter function, allows health to be updated after initial object creation</span>
+    <span class="nd">@health</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">health</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">health</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_health</span> <span class="o">=</span> <span class="n">health</span>
+    
+    <span class="c1"># a getter method, extracts abilities from object</span>
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">abilities</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_abilities</span>
+    
+    <span class="c1"># a setter function, allows abilities to be updated after initial object creation</span>
+    <span class="nd">@abilities</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">abilities</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">abilities</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_abilities</span> <span class="o">=</span> <span class="n">abilities</span>
+        
+    <span class="c1"># a getter method, extracts ultimate from object</span>
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">ultimate</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ultimate</span>
+    
+    <span class="c1"># a setter function, allows ultimate to be updated after initial object</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/jaggerklein/vscode/The-Pentagon/_notebooks/2023-03-13-AP-unit2-4a.ipynb Cell 19</span> in <span class="ansi-cyan-fg">&lt;cell line: 16&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/jaggerklein/vscode/The-Pentagon/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X26sZmlsZQ%3D%3D?line=8'&gt;9&lt;/a&gt;</span> ''' Tutorial: https://www.sqlalchemy.org/library.html#tutorials, try to get into a Python shell and follow along '''
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/jaggerklein/vscode/The-Pentagon/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X26sZmlsZQ%3D%3D?line=10'&gt;11&lt;/a&gt;</span> # Define the Hero class to manage actions in the 'heroes' table
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/jaggerklein/vscode/The-Pentagon/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X26sZmlsZQ%3D%3D?line=11'&gt;12&lt;/a&gt;</span> # -- Object Relational Mapping (ORM) is the key concept of SQLAlchemy
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/jaggerklein/vscode/The-Pentagon/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X26sZmlsZQ%3D%3D?line=12'&gt;13&lt;/a&gt;</span> # -- a.) db.Model is like an inner layer of the onion in ORM
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/jaggerklein/vscode/The-Pentagon/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X26sZmlsZQ%3D%3D?line=13'&gt;14&lt;/a&gt;</span> # -- b.) Hero represents data we want to store, something that is built on db.Model
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/jaggerklein/vscode/The-Pentagon/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X26sZmlsZQ%3D%3D?line=14'&gt;15&lt;/a&gt;</span> # -- c.) SQLAlchemy ORM is layer on top of SQLAlchemy Core, then SQLAlchemy engine, SQL
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell:/Users/jaggerklein/vscode/The-Pentagon/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X26sZmlsZQ%3D%3D?line=15'&gt;16&lt;/a&gt;</span> class Hero(db.Model):
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/jaggerklein/vscode/The-Pentagon/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X26sZmlsZQ%3D%3D?line=16'&gt;17&lt;/a&gt;</span>     __tablename__ = 'heroes'  # table name is plural, class name is singular
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/jaggerklein/vscode/The-Pentagon/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X26sZmlsZQ%3D%3D?line=17'&gt;18&lt;/a&gt;</span>     # --
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/jaggerklein/vscode/The-Pentagon/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X26sZmlsZQ%3D%3D?line=18'&gt;19&lt;/a&gt;</span>     # Define the Hero schema with "vars" from object
+
+<span class="ansi-red-fg">NameError</span>: name 'db' is not defined</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
