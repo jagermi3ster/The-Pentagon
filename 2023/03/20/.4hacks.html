@@ -172,11 +172,9 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>2023-03-21 08:53:41,541 INFO sqlalchemy.engine.Engine BEGIN (implicit)
-2023-03-21 08:53:41,546 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("heroes")
-2023-03-21 08:53:41,547 INFO sqlalchemy.engine.Engine [raw sql] ()
-2023-03-21 08:53:41,551 INFO sqlalchemy.engine.Engine COMMIT
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/var/folders/2v/jx5mc_r50sd04klb4gfy0kl00000gn/T/ipykernel_80358/388939683.py:12: MovedIn20Warning: The ``declarative_base()`` function is now available as sqlalchemy.orm.declarative_base(). (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  Base = declarative_base()
 </pre>
 </div>
 </div>
@@ -230,9 +228,9 @@ window.onload = wrap_img;
 <span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
 
 <span class="c1"># Add some heroes to the database</span>
-<span class="n">genji</span> <span class="o">=</span> <span class="n">Hero</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Genji'</span><span class="p">,</span> <span class="n">role</span><span class="o">=</span><span class="s1">'DPS'</span><span class="p">,</span> <span class="n">ultimate</span><span class="o">=</span><span class="s1">'DragonBlade'</span><span class="p">)</span>
+<span class="n">ashe</span> <span class="o">=</span> <span class="n">Hero</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Ashe'</span><span class="p">,</span> <span class="n">role</span><span class="o">=</span><span class="s1">'DPS'</span><span class="p">,</span> <span class="n">ultimate</span><span class="o">=</span><span class="s1">'Bob'</span><span class="p">)</span>
 
-<span class="n">session</span><span class="o">.</span><span class="n">add_all</span><span class="p">([</span><span class="n">genji</span><span class="p">])</span>
+<span class="n">session</span><span class="o">.</span><span class="n">add_all</span><span class="p">([</span><span class="n">ashe</span><span class="p">])</span>
 <span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
 
 <span class="c1"># Query the database for all heroes</span>
@@ -250,15 +248,24 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>2023-03-21 09:00:19,205 INFO sqlalchemy.engine.Engine BEGIN (implicit)
-2023-03-21 09:00:19,208 INFO sqlalchemy.engine.Engine INSERT INTO heroes (name, role, ultimate) VALUES (?, ?, ?)
-2023-03-21 09:00:19,212 INFO sqlalchemy.engine.Engine [generated in 0.00336s] ('Genji', 'DPS', 'DragonBlade')
-2023-03-21 09:00:19,216 INFO sqlalchemy.engine.Engine COMMIT
-2023-03-21 09:00:19,220 INFO sqlalchemy.engine.Engine BEGIN (implicit)
-2023-03-21 09:00:19,222 INFO sqlalchemy.engine.Engine SELECT heroes.id AS heroes_id, heroes.name AS heroes_name, heroes.role AS heroes_role, heroes.ultimate AS heroes_ultimate 
+<pre>2023-03-21 11:28:01,141 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2023-03-21 11:28:01,145 INFO sqlalchemy.engine.Engine INSERT INTO heroes (name, role, ultimate) VALUES (?, ?, ?)
+2023-03-21 11:28:01,146 INFO sqlalchemy.engine.Engine [generated in 0.00130s] ('Ashe', 'DPS', 'Bob')
+2023-03-21 11:28:01,150 INFO sqlalchemy.engine.Engine COMMIT
+2023-03-21 11:28:01,153 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2023-03-21 11:28:01,156 INFO sqlalchemy.engine.Engine SELECT heroes.id AS heroes_id, heroes.name AS heroes_name, heroes.role AS heroes_role, heroes.ultimate AS heroes_ultimate 
 FROM heroes
-2023-03-21 09:00:19,224 INFO sqlalchemy.engine.Engine [generated in 0.00171s] ()
-[&lt;Hero(id=1, name="Tracer", role="DPS", ultimate="Pulse Bomb")&gt;, &lt;Hero(id=2, name="Mercy", role="Support", ultimate="Valkyrie")&gt;, &lt;Hero(id=3, name="Reinhardt", role="Tank", ultimate="Earthshatter")&gt;, &lt;Hero(id=4, name="Doomfist", role="Tank", ultimate="MeteorStrike")&gt;, &lt;Hero(id=5, name="Genji", role="DPS", ultimate="DragonBlade")&gt;]
+2023-03-21 11:28:01,157 INFO sqlalchemy.engine.Engine [generated in 0.00111s] ()
+[&lt;Hero(id=1, name="Tracer", role="DPS", ultimate="Pulse Bomb Plus")&gt;, &lt;Hero(id=2, name="Mercy", role="Support", ultimate="Valkyrie")&gt;, &lt;Hero(id=3, name="Reinhardt", role="Tank", ultimate="Earthshatter")&gt;, &lt;Hero(id=4, name="Doomfist", role="Tank", ultimate="MeteorStrike")&gt;, &lt;Hero(id=5, name="Genji", role="DPS", ultimate="DragonBlade")&gt;, &lt;Hero(id=6, name="Ashe", role="DPS", ultimate="Bob")&gt;]
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/var/folders/2v/jx5mc_r50sd04klb4gfy0kl00000gn/T/ipykernel_80358/296829963.py:12: MovedIn20Warning: The ``declarative_base()`` function is now available as sqlalchemy.orm.declarative_base(). (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  Base = declarative_base()
 </pre>
 </div>
 </div>
@@ -533,6 +540,14 @@ WHERE heroes.name = ?
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><img src="/The-Pentagon/images/copied_from_nb/images/tablee.png" alt="Alt text"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="/The-Pentagon/images/copied_from_nb/images/debug.png" alt="Alt text"></p>
 
 </div>
 </div>
