@@ -10,17 +10,17 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Using Programs with Data is focused on SQL and database actions. Part B focuses on learning SQL commands, connections, and curses using an Imperative programming style," />
 <meta property="og:description" content="Using Programs with Data is focused on SQL and database actions. Part B focuses on learning SQL commands, connections, and curses using an Imperative programming style," />
-<link rel="canonical" href="https://jagermi3ster.github.io/The-Pentagon/2023/03/20/.4hacks.html" />
-<meta property="og:url" content="https://jagermi3ster.github.io/The-Pentagon/2023/03/20/.4hacks.html" />
+<link rel="canonical" href="https://jagermi3ster.github.io/The-Pentagon/2023/03/26/.4hacks.html" />
+<meta property="og:url" content="https://jagermi3ster.github.io/The-Pentagon/2023/03/26/.4hacks.html" />
 <meta property="og:site_name" content="Jagger’s Website" />
 <meta property="og:image" content="https://jagermi3ster.github.io/The-Pentagon/images/python.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-03-20T00:00:00-05:00" />
+<meta property="article:published_time" content="2023-03-26T00:00:00-05:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://jagermi3ster.github.io/The-Pentagon/images/python.png" />
 <meta property="twitter:title" content="Unit 2.4b Hacks" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-20T00:00:00-05:00","datePublished":"2023-03-20T00:00:00-05:00","description":"Using Programs with Data is focused on SQL and database actions. Part B focuses on learning SQL commands, connections, and curses using an Imperative programming style,","headline":"Unit 2.4b Hacks","image":"https://jagermi3ster.github.io/The-Pentagon/images/python.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://jagermi3ster.github.io/The-Pentagon/2023/03/20/.4hacks.html"},"url":"https://jagermi3ster.github.io/The-Pentagon/2023/03/20/.4hacks.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-26T00:00:00-05:00","datePublished":"2023-03-26T00:00:00-05:00","description":"Using Programs with Data is focused on SQL and database actions. Part B focuses on learning SQL commands, connections, and curses using an Imperative programming style,","headline":"Unit 2.4b Hacks","image":"https://jagermi3ster.github.io/The-Pentagon/images/python.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://jagermi3ster.github.io/The-Pentagon/2023/03/26/.4hacks.html"},"url":"https://jagermi3ster.github.io/The-Pentagon/2023/03/26/.4hacks.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/The-Pentagon/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://jagermi3ster.github.io/The-Pentagon/feed.xml" title="Jagger's Website" /><link rel="shortcut icon" type="image/x-icon" href="/The-Pentagon/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -75,13 +75,13 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Unit 2.4b Hacks</h1><p class="page-description">Using Programs with Data is focused on SQL and database actions.  Part B focuses on learning SQL commands, connections, and curses using an Imperative programming style,</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-03-20T00:00:00-05:00" itemprop="datePublished">
-        Mar 20, 2023
+    <h1 class="post-title p-name" itemprop="name headline">Unit 2.4b Hacks</h1><p class="page-description">Using Programs with Data is focused on SQL and database actions.  Part B focuses on learning SQL commands, connections, and curses using an Imperative programming style,</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-03-26T00:00:00-05:00" itemprop="datePublished">
+        Mar 26, 2023
       </time>
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      9 min read
     
 </span></p>
 
@@ -172,6 +172,17 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2023-03-21 12:19:36,328 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2023-03-21 12:19:36,336 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("heroes")
+2023-03-21 12:19:36,348 INFO sqlalchemy.engine.Engine [raw sql] ()
+2023-03-21 12:19:36,368 INFO sqlalchemy.engine.Engine COMMIT
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>/var/folders/2v/jx5mc_r50sd04klb4gfy0kl00000gn/T/ipykernel_80358/388939683.py:12: MovedIn20Warning: The ``declarative_base()`` function is now available as sqlalchemy.orm.declarative_base(). (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
   Base = declarative_base()
@@ -228,9 +239,9 @@ window.onload = wrap_img;
 <span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
 
 <span class="c1"># Add some heroes to the database</span>
-<span class="n">ashe</span> <span class="o">=</span> <span class="n">Hero</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Ashe'</span><span class="p">,</span> <span class="n">role</span><span class="o">=</span><span class="s1">'DPS'</span><span class="p">,</span> <span class="n">ultimate</span><span class="o">=</span><span class="s1">'Bob'</span><span class="p">)</span>
+<span class="n">mario</span> <span class="o">=</span> <span class="n">Hero</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Mario'</span><span class="p">,</span> <span class="n">role</span><span class="o">=</span><span class="s1">'DPS'</span><span class="p">,</span> <span class="n">ultimate</span><span class="o">=</span><span class="s1">'Mushroom'</span><span class="p">)</span>
 
-<span class="n">session</span><span class="o">.</span><span class="n">add_all</span><span class="p">([</span><span class="n">ashe</span><span class="p">])</span>
+<span class="n">session</span><span class="o">.</span><span class="n">add_all</span><span class="p">([</span><span class="n">mario</span><span class="p">])</span>
 <span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
 
 <span class="c1"># Query the database for all heroes</span>
@@ -247,25 +258,25 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>2023-03-21 11:28:01,141 INFO sqlalchemy.engine.Engine BEGIN (implicit)
-2023-03-21 11:28:01,145 INFO sqlalchemy.engine.Engine INSERT INTO heroes (name, role, ultimate) VALUES (?, ?, ?)
-2023-03-21 11:28:01,146 INFO sqlalchemy.engine.Engine [generated in 0.00130s] ('Ashe', 'DPS', 'Bob')
-2023-03-21 11:28:01,150 INFO sqlalchemy.engine.Engine COMMIT
-2023-03-21 11:28:01,153 INFO sqlalchemy.engine.Engine BEGIN (implicit)
-2023-03-21 11:28:01,156 INFO sqlalchemy.engine.Engine SELECT heroes.id AS heroes_id, heroes.name AS heroes_name, heroes.role AS heroes_role, heroes.ultimate AS heroes_ultimate 
-FROM heroes
-2023-03-21 11:28:01,157 INFO sqlalchemy.engine.Engine [generated in 0.00111s] ()
-[&lt;Hero(id=1, name="Tracer", role="DPS", ultimate="Pulse Bomb Plus")&gt;, &lt;Hero(id=2, name="Mercy", role="Support", ultimate="Valkyrie")&gt;, &lt;Hero(id=3, name="Reinhardt", role="Tank", ultimate="Earthshatter")&gt;, &lt;Hero(id=4, name="Doomfist", role="Tank", ultimate="MeteorStrike")&gt;, &lt;Hero(id=5, name="Genji", role="DPS", ultimate="DragonBlade")&gt;, &lt;Hero(id=6, name="Ashe", role="DPS", ultimate="Bob")&gt;]
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/var/folders/2v/jx5mc_r50sd04klb4gfy0kl00000gn/T/ipykernel_80358/3966635573.py:12: MovedIn20Warning: The ``declarative_base()`` function is now available as sqlalchemy.orm.declarative_base(). (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  Base = declarative_base()
 </pre>
 </div>
 </div>
 
 <div class="output_area">
 
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>/var/folders/2v/jx5mc_r50sd04klb4gfy0kl00000gn/T/ipykernel_80358/296829963.py:12: MovedIn20Warning: The ``declarative_base()`` function is now available as sqlalchemy.orm.declarative_base(). (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
-  Base = declarative_base()
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2023-03-21 12:22:55,630 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2023-03-21 12:22:55,704 INFO sqlalchemy.engine.Engine INSERT INTO heroes (name, role, ultimate) VALUES (?, ?, ?)
+2023-03-21 12:22:55,708 INFO sqlalchemy.engine.Engine [generated in 0.01354s] ('Mario', 'DPS', 'Mushroom')
+2023-03-21 12:22:55,723 INFO sqlalchemy.engine.Engine COMMIT
+2023-03-21 12:22:55,746 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2023-03-21 12:22:55,772 INFO sqlalchemy.engine.Engine SELECT heroes.id AS heroes_id, heroes.name AS heroes_name, heroes.role AS heroes_role, heroes.ultimate AS heroes_ultimate 
+FROM heroes
+2023-03-21 12:22:55,775 INFO sqlalchemy.engine.Engine [generated in 0.00291s] ()
+[&lt;Hero(id=1, name="Tracer", role="DPS", ultimate="Pulse Bomb Plus")&gt;, &lt;Hero(id=2, name="Mercy", role="Support", ultimate="Valkyrie")&gt;, &lt;Hero(id=3, name="Reinhardt", role="Tank", ultimate="Earthshatter")&gt;, &lt;Hero(id=4, name="Doomfist", role="Tank", ultimate="MeteorStrike")&gt;, &lt;Hero(id=5, name="Genji", role="DPS", ultimate="DragonBlade")&gt;, &lt;Hero(id=6, name="Ashe", role="DPS", ultimate="Bob")&gt;, &lt;Hero(id=7, name="Mario", role="DPS", ultimate="Mushroom")&gt;]
 </pre>
 </div>
 </div>
@@ -552,11 +563,321 @@ WHERE heroes.name = ?
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="c1"># create a connection to the database file</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'overwatch2.db'</span><span class="p">)</span>
+
+<span class="c1"># create a new table called 'heroes'</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">'''CREATE TABLE IF NOT EXISTS heroes</span>
+<span class="s1">             (id INTEGER PRIMARY KEY AUTOINCREMENT,</span>
+<span class="s1">              name TEXT,</span>
+<span class="s1">              role TEXT,</span>
+<span class="s1">              ultimate_ability TEXT);'''</span><span class="p">)</span>
+
+<span class="c1"># insert a new hero into the table</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"INSERT INTO heroes (name, role, ultimate_ability) VALUES ('Tracer', 'Damage', 'Pulse Bomb')"</span><span class="p">)</span>
+
+<span class="c1"># save the changes and close the connection</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'overwatch2.db'</span><span class="p">)</span>
+
+<span class="c1"># insert a new hero into the table</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"INSERT INTO heroes (name, role, ultimate_ability) VALUES ('Tracer', 'Damage', 'Pulse Bomb')"</span><span class="p">)</span>
+
+<span class="c1"># save the changes and close the connection</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="k">def</span> <span class="nf">create_hero</span><span class="p">():</span>
+    <span class="n">hero_name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter new hero name:"</span><span class="p">)</span>
+    <span class="n">role</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter new hero role:"</span><span class="p">)</span>
+    <span class="n">ultimate_ability</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter ultimate ability name:"</span><span class="p">)</span>
+    
+    <span class="c1"># Connect to the database file</span>
+    <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s2">"overwatch2.db"</span><span class="p">)</span>
+
+    <span class="c1"># Create a cursor object to execute SQL commands</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># Execute an SQL command to insert data into a table</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"INSERT INTO heroes (name, role, ultimate_ability) VALUES (?, ?, ?)"</span><span class="p">,</span> <span class="p">(</span><span class="n">hero_name</span><span class="p">,</span> <span class="n">role</span><span class="p">,</span> <span class="n">ultimate_ability</span><span class="p">))</span>
+        
+        <span class="c1"># Commit the changes to the database</span>
+        <span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"A new hero </span><span class="si">{</span><span class="n">hero_name</span><span class="si">}</span><span class="s2"> has been created"</span><span class="p">)</span>
+                
+    <span class="k">except</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">Error</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Error while executing the INSERT:"</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
+
+
+    <span class="c1"># Close the cursor and connection objects</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    
+<span class="n">create_hero</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>A new hero genji has been created
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="k">def</span> <span class="nf">read</span><span class="p">():</span>
+    <span class="c1"># Connect to the database file</span>
+    <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'overwatch2.db'</span><span class="p">)</span>
+
+    <span class="c1"># Create a cursor object to execute SQL commands</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># Execute an SQL command to select all data from the "heroes" table</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"SELECT * FROM heroes"</span><span class="p">)</span>
+        
+        <span class="c1"># Fetch all the rows returned by the SQL command</span>
+        <span class="n">rows</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+        
+        <span class="c1"># Print the data</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+                
+    <span class="k">except</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">Error</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Error while executing the SELECT:"</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
+
+
+    <span class="c1"># Close the cursor and connection objects</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="k">def</span> <span class="nf">update_hero</span><span class="p">(</span><span class="n">tracer</span><span class="p">):</span>
+    <span class="c1"># Prompt the user to enter the hero ID and new information</span>
+    <span class="n">hero_id</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the ID of the hero you want to update: "</span><span class="p">)</span>
+    <span class="n">hero_name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the new hero name (leave blank to keep current name): "</span><span class="p">)</span>
+    <span class="n">role</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the new role (leave blank to keep current role): "</span><span class="p">)</span>
+    <span class="n">ultimate_ability</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the new ultimate ability (leave blank to keep current ability): "</span><span class="p">)</span>
+
+    <span class="c1"># Connect to the database</span>
+    <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'overwatch2.db'</span><span class="p">)</span>
+
+    <span class="c1"># Create a cursor object</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+    <span class="c1"># Build the SQL query</span>
+    <span class="n">sql</span> <span class="o">=</span> <span class="s2">"UPDATE heroes SET"</span>
+    <span class="n">params</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="c1"># If the user entered a new hero name, add it to the query and parameters</span>
+    <span class="k">if</span> <span class="n">hero_name</span><span class="p">:</span>
+        <span class="n">sql</span> <span class="o">+=</span> <span class="s2">" hero_name = ?,"</span>
+        <span class="n">params</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">hero_name</span><span class="p">)</span>
+
+    <span class="c1"># If the user entered a new role, add it to the query and parameters</span>
+    <span class="k">if</span> <span class="n">role</span><span class="p">:</span>
+        <span class="n">sql</span> <span class="o">+=</span> <span class="s2">" role = ?,"</span>
+        <span class="n">params</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">role</span><span class="p">)</span>
+
+    <span class="c1"># If the user entered a new ultimate ability, add it to the query and parameters</span>
+    <span class="k">if</span> <span class="n">ultimate_ability</span><span class="p">:</span>
+        <span class="n">sql</span> <span class="o">+=</span> <span class="s2">" ultimate_ability = ?,"</span>
+        <span class="n">params</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ultimate_ability</span><span class="p">)</span>
+
+    <span class="c1"># Remove the trailing comma from the query</span>
+    <span class="n">sql</span> <span class="o">=</span> <span class="n">sql</span><span class="o">.</span><span class="n">rstrip</span><span class="p">(</span><span class="s2">","</span><span class="p">)</span>
+
+    <span class="c1"># Add the WHERE clause to specify the hero to update</span>
+    <span class="n">sql</span> <span class="o">+=</span> <span class="s2">" WHERE id = ?"</span>
+    <span class="n">params</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">hero_id</span><span class="p">)</span>
+
+    <span class="c1"># Execute the SQL query with the provided parameters</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">sql</span><span class="p">,</span> <span class="n">params</span><span class="p">)</span>
+
+    <span class="c1"># Commit the changes and close the connection</span>
+    <span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+    <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+    <span class="c1"># Display a message indicating success</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Hero updated successfully!"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">update_hero</span><span class="p">(</span><span class="s1">'Tracer'</span><span class="p">,</span> <span class="s1">'Damage'</span><span class="p">,</span> <span class="s1">'Pulse Bomb Plus'</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/jaggerklein/vscode/The-Pentagon/_notebooks/2023-3-19-2.4hacks.ipynb Cell 19</span> in <span class="ansi-cyan-fg">&lt;cell line: 1&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell:/Users/jaggerklein/vscode/The-Pentagon/_notebooks/2023-3-19-2.4hacks.ipynb#X36sZmlsZQ%3D%3D?line=0'&gt;1&lt;/a&gt;</span> update_hero('Tracer', 'Damage', 'Pulse Bomb Plus')
+
+<span class="ansi-red-fg">TypeError</span>: update_hero() takes 0 positional arguments but 3 were given</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="k">def</span> <span class="nf">delete_hero</span><span class="p">():</span>
+    <span class="c1"># Prompt the user for the hero name to delete</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"tracer"</span><span class="p">)</span>
+
+    <span class="c1"># Connect to the database file</span>
+    <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s2">"overwatch2.db"</span><span class="p">)</span>
+
+    <span class="c1"># Create a cursor object to execute SQL commands</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># Execute an SQL command to delete the hero with the given name</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"DELETE FROM heroes WHERE hero_name = ?"</span><span class="p">,</span> <span class="p">(</span><span class="n">name</span><span class="p">))</span>
+
+        <span class="c1"># Check if any rows were affected by the delete command</span>
+        <span class="k">if</span> <span class="n">cursor</span><span class="o">.</span><span class="n">rowcount</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"No hero with name </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> found."</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">cursor</span><span class="o">.</span><span class="n">rowcount</span><span class="si">}</span><span class="s2"> hero(s) with name </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> deleted."</span><span class="p">)</span>
+
+        <span class="c1"># Commit the changes to the database</span>
+        <span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+
+    <span class="k">except</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">Error</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Error while executing the DELETE:"</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
+
+    <span class="c1"># Close the cursor and connection objects</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
 
-  </div><a class="u-url" href="/The-Pentagon/2023/03/20/.4hacks.html" hidden></a>
+  </div><a class="u-url" href="/The-Pentagon/2023/03/26/.4hacks.html" hidden></a>
 </article>
 
       </div>
