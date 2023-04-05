@@ -583,7 +583,7 @@ producer: {'Joel Little', 'Louis Bell', 'Taylor Swift', 'Frank Dukes', 'Jack Ant
             <span class="s2">"producer"</span><span class="p">:</span> <span class="s2">"Metro Boomin"</span>
         <span class="p">},</span>
         <span class="p">{</span>
-            <span class="s2">"title"</span><span class="p">:</span> <span class="s2">"Real Nigga"</span><span class="p">,</span>
+            <span class="s2">"title"</span><span class="p">:</span> <span class="s2">"Real N*gga"</span><span class="p">,</span>
             <span class="s2">"length"</span><span class="p">:</span> <span class="s2">"2:49"</span><span class="p">,</span>
             <span class="s2">"featured_artist"</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
             <span class="s2">"producer"</span><span class="p">:</span> <span class="s2">"Metro Boomin"</span>
@@ -614,9 +614,37 @@ producer: {'Joel Little', 'Louis Bell', 'Taylor Swift', 'Frank Dukes', 'Jack Ant
         <span class="p">}</span>
     <span class="p">]</span>
 <span class="p">}</span>
+
+<span class="n">song_title</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter a song title from Savage Mode: "</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">track</span> <span class="ow">in</span> <span class="n">album</span><span class="p">[</span><span class="s2">"tracks"</span><span class="p">]:</span>
+    <span class="k">if</span> <span class="n">track</span><span class="p">[</span><span class="s2">"title"</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="n">song_title</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Title:"</span><span class="p">,</span> <span class="n">track</span><span class="p">[</span><span class="s2">"title"</span><span class="p">])</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Length:"</span><span class="p">,</span> <span class="n">track</span><span class="p">[</span><span class="s2">"length"</span><span class="p">])</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Featured Artist:"</span><span class="p">,</span> <span class="n">track</span><span class="p">[</span><span class="s2">"featured_artist"</span><span class="p">]</span> <span class="ow">or</span> <span class="s2">"N/A"</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Producer:"</span><span class="p">,</span> <span class="n">track</span><span class="p">[</span><span class="s2">"producer"</span><span class="p">])</span>
+        <span class="k">break</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Sorry, the song was not found in Savage Mode."</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Title: Mad High
+Length: 3:14
+Featured Artist: N/A
+Producer: Metro Boomin
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
