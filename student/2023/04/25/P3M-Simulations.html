@@ -82,7 +82,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      9 min read
     
 </span></p>
 
@@ -156,17 +156,17 @@ window.onload = wrap_img;
 </h2>
 <ul>
 <li>Simulations are abstractions that mimic more complex objects or phenomena from the real world<ul>
-<li>Purposes include drawing inferences without the constraitns of the real world</li>
+<li>Purposes include drawing inferences without the constraints of the real world</li>
 </ul>
 </li>
 <li>Simulations use varying sets of values to reflect the changing state of a real phenomenon</li>
-<li>Often, when developing a simulation, it is necessary to remove specific <strong><em>__</em></strong> or simplify aspects<ul>
-<li>Simulations can often contain <em>__</em> based on which details or real-world elements were included/excluded</li>
+<li>Often, when developing a simulation, it is necessary to remove specific complexities or simplify aspects<ul>
+<li>Simulations can often contain biases based on which details or real-world elements were included/excluded</li>
 </ul>
 </li>
-<li>Simulations allow the formulation of <strong><strong>___</strong></strong> under consideration</li>
+<li>Simulations allow the formulation of hypotheses or predictions under consideration</li>
 <li>Variability and randomness of the world is considered using random number generators</li>
-<li>Examples: rolling dice, spinners, molecular models, analyze chemicals/reactions...</li>
+<li>Examples: rolling dice, spinners, molecular models, analyzing chemicals/reactions...</li>
 </ul>
 
 </div>
@@ -751,7 +751,7 @@ Number of red: 145
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>How does this simulation have bias?</p>
+<p>How does this simulation have bias? It only picks from the height catagory.</p>
 
 </div>
 </div>
@@ -802,6 +802,176 @@ Number of red: 145
 <li>Answer these <a href="https://shruthim0.github.io/canada/2023/04/03/simulationsplanning2.html">simulation questions</a> (0.3)</li>
 <li>Bonus: take a real world event and make a pseudocode representation or pseudocode on a flowchart of how you would make a simulation for it (up to +0.1 bonus)</li>
 </ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># initialize variables</span>
+<span class="n">num_dice</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">num_rolls</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="n">rolls</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1"># roll the dice and collect data</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_rolls</span><span class="p">):</span>
+    <span class="n">roll</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_dice</span><span class="p">):</span>
+        <span class="n">roll</span> <span class="o">+=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+    <span class="n">rolls</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">roll</span><span class="p">)</span>
+
+<span class="c1"># display data using a histogram</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">rolls</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="n">num_dice</span><span class="p">,</span> <span class="n">num_dice</span><span class="o">*</span><span class="mi">6</span><span class="o">+</span><span class="mi">2</span><span class="p">),</span> <span class="n">align</span><span class="o">=</span><span class="s1">'left'</span><span class="p">,</span> <span class="n">rwidth</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'Roll'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'Frequency'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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">
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In this section, we are importing the random and matplotlib.pyplot libraries. The random library is used to generate random integers, which we will use to simulate the roll of the dice. The matplotlib.pyplot library is used to plot the histogram of the data.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">num_dice</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">num_rolls</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="n">rolls</span> <span class="o">=</span> <span class="p">[]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In this section, we are initializing three variables: num_dice, which represents the number of dice we will be rolling; num_rolls, which represents the number of times we will repeat the rolling process; and rolls, which will be a list that we will use to store the data from each roll.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_rolls</span><span class="p">):</span>
+    <span class="n">roll</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_dice</span><span class="p">):</span>
+        <span class="n">roll</span> <span class="o">+=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+    <span class="n">rolls</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">roll</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In this section, we are using a nested loop to simulate the rolling of the dice. We start by iterating num_rolls times using a for loop, and on each iteration, we reset the value of roll to 0. We then use another for loop to simulate rolling num_dice dice, and on each iteration, we add a random integer between 1 and 6 (inclusive) to roll. Finally, we append the total value of the roll to the rolls list.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">rolls</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="n">num_dice</span><span class="p">,</span> <span class="n">num_dice</span><span class="o">*</span><span class="mi">6</span><span class="o">+</span><span class="mi">2</span><span class="p">),</span> <span class="n">align</span><span class="o">=</span><span class="s1">'left'</span><span class="p">,</span> <span class="n">rwidth</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'Roll'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'Frequency'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Real World Problem</strong> In this section, we use the plt.hist() function from the Matplotlib library to plot the histogram of the data. The rolls list is passed as the first argument, and we set the bins parameter to a list of integers ranging from num_dice to num_dice*6+1, which specifies the range of values that can be rolled. We also set the align parameter to 'left', which shifts the bins to the left, so that each bin corresponds to a specific roll value (e.g., 2, 3, 4, etc.). Finally, we set the rwidth parameter to 0.8, which sets the width of each bin to 80% of its total width. We also set the labels for the x and y axes, and then use the plt.show() function to display the histogram.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Bias</strong>Pseudo-random number generation: The random library in Python uses a pseudorandom number generator to simulate rolling dice. While this generator produces numbers that are statistically random, they are not truly random and can be predicted if the seed value is known. This means that the results of the simulation may not perfectly mimic the results of rolling real dice, which are truly random.</p>
 
 </div>
 </div>
